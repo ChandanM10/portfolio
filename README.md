@@ -70,9 +70,9 @@ This project is deployed using Vercel, which provides easy CI/CD integration wit
  📬 Contact
 
 If you’d like to connect, collaborate, or just say hi, feel free to reach out:
-	•	✉️ Email: itssinghchandan10@gmail.com
-	•	🔗 LinkedIn: linkedin.com/in/chandan-mahato
-	•	🌍 Portfolio: chandan-mahato-portfolio-website.vercel.app
+	##•	✉️ Email: itssinghchandan10@gmail.com
+	##•	🔗 LinkedIn: linkedin.com/in/chandan-mahato
+	##•	🌍 Portfolio: chandan-mahato-portfolio-website.vercel.app
 
 ⸻
 
