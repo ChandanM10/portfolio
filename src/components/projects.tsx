@@ -10,7 +10,7 @@ const projects = [
       id: 1,
       title: "Fraud Detection System",
       description: "An intelligent system that leverages machine learning algorithms to detect suspicious transactions and prevent fraud in real-time, improving financial security.",
-      image: "/fraud-detection.jpeg",  // ✅ Local image from /public folder
+      image: "/fraud-detection.jpeg",  //
       tags: ["Machine Learning", "Python", "Flask", "Scikit-learn"],
       githubUrl: "https://github.com/Cngh10/Fraud-Detection-Project",
       liveUrl: "https://your-live-site.com",
@@ -23,7 +23,7 @@ const projects = [
     id: 2,
     title: "Employee Churn Prediction",
     description: "A machine learning project that predicts whether an employee is likely to leave the company, helping HR make proactive retention decisions.",
-    image: "/employee-churn.png",  // ✅ Local image from public folder
+    image: "/employee-churn.png",  //
     tags: ["Python", "Pandas", "Scikit-learn", "XGBoost"],
     githubUrl: "https://github.com/Cngh10/Employee-churn-prediction-",
     liveUrl: "https://your-live-site.com",
@@ -34,6 +34,19 @@ const projects = [
   },
   {
     id: 3,
+    title: "Nepal Gov Connect",
+    description: "A full-stack web application that connects citizens with government services in Nepal. It allows users to register, submit complaint, and interact with different government departments through a centralized platform. The system includes authentication, API integration, and real-time communication features to improve accessibility and transparency.",
+    image: "/nepal-gov-connect.png",
+    tags: ["Django", "Django REST Framework", "Channels", "JavaScript", "HTML", "CSS"],
+    githubUrl: "https://github.com/Cngh10/Nepal_gov_connect",
+    liveUrl: "https://nepal-gov-connect.onrender.com",
+    slug: "nepal-gov-connect",
+    featured: true,
+    date: "2026",
+    client: "Personal Project"
+},
+  {
+    id: 4,
     title: "Analytics Dashboard",
     description: "A comprehensive analytics dashboard with interactive charts and reports",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
@@ -47,10 +60,10 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Library Database Management System",
     description: "A web-based application designed to manage library resources, user registration, and book checkouts efficiently with a user-friendly interface.",
-    image: "/library-system.jpg",  // ✅ Local image stored in /public
+    image: "/library-system.jpg",  // 
     tags: ["HTML", "CSS", "JavaScript", "MySQL", "PHP"],
     githubUrl: "https://github.com/Cngh10/Library-Database-Management-System",
     liveUrl: "https://your-live-site.com",
@@ -60,10 +73,10 @@ const projects = [
     client: "Academic Institution"
   },
  {
-    id: 5,
+    id: 6,
     title: "Predicting Solar Energy Production",
     description: "A data science project that uses machine learning to predict annual solar energy output based on geographical and technical factors.",
-    image: "/solar.jpg.webp",  // ✅ Local image stored in /public
+    image: "/solar.jpg.webp",  // 
     tags: ["Python", "Machine Learning", "XGBoost", "Pandas", "Matplotlib"],
     githubUrl: "https://github.com/Cngh10/Predicting-Solar-Energy-Production",
     liveUrl: "https://your-live-site.com",
