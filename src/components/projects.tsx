@@ -7,84 +7,96 @@ import { AnimatedSection } from "@/components/animated-section"
 
 const projects = [
   {
-      id: 1,
-      title: "Fraud Detection System",
-      description: "An intelligent system that leverages machine learning algorithms to detect suspicious transactions and prevent fraud in real-time, improving financial security.",
-      image: "/fraud-detection.jpeg",  //
-      tags: ["Machine Learning", "Python", "Flask", "Scikit-learn"],
-      githubUrl: "https://github.com/Cngh10/Fraud-Detection-Project",
-      liveUrl: "https://your-live-site.com",
-      slug: "fraud-detection-system",
-      featured: true,
-      date: "2024",
-      client: "Fintech Company"
-  },
-  {
-    id: 2,
-    title: "Employee Churn Prediction",
-    description: "A machine learning project that predicts whether an employee is likely to leave the company, helping HR make proactive retention decisions.",
-    image: "/employee-churn.png",  //
-    tags: ["Python", "Pandas", "Scikit-learn", "XGBoost"],
-    githubUrl: "https://github.com/Cngh10/Employee-churn-prediction-",
-    liveUrl: "https://your-live-site.com",
-    slug: "employee-churn-prediction",
-    featured: true,
-    date: "2025",
-    client: "HR Analytics Team"
-  },
-  {
-    id: 3,
+    id: 1,
     title: "Nepal Gov Connect",
-    description: "A full-stack web application that connects citizens with government services in Nepal. It allows users to register, submit complaint, and interact with different government departments through a centralized platform. The system includes authentication, API integration, and real-time communication features to improve accessibility and transparency.",
+    description: "A full-stack web application connecting citizens with government services in Nepal. Featuring complaint registration, department routing, and real-time communication via WebSockets to enhance public transparency and efficiency.",
     image: "/nepal-gov-connect.png",
-    tags: ["Django", "Django REST Framework", "Channels", "JavaScript", "HTML", "CSS"],
+    tags: ["Django", "Django REST Framework", "Channels", "WebSockets", "PostgreSQL", "JavaScript"],
     githubUrl: "https://github.com/Cngh10/Nepal_gov_connect",
     liveUrl: "https://nepal-gov-connect.onrender.com",
     slug: "nepal-gov-connect",
     featured: true,
     date: "2026",
-    client: "Personal Project"
-},
+    client: "Civic Tech Project"
+  },
+  {
+    id: 2,
+    title: "JARVIS Voice Assistant",
+    description: "An AI-powered voice assistant operating system capable of voice interaction, intelligent query resolution, task automation, memory management, and execution of OS-level commands.",
+    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2070&auto=format&fit=crop",
+    tags: ["Python", "Speech Recognition", "NLP", "AI Agents", "Automation"],
+    githubUrl: "https://github.com/Cngh10/JARVIS_IS_LISTENING",
+    liveUrl: "https://github.com/Cngh10/JARVIS_IS_LISTENING",
+    slug: "jarvis-voice-assistant",
+    featured: true,
+    date: "2025",
+    client: "AI Research Project"
+  },
+  {
+    id: 3,
+    title: "Fraud Detection System",
+    description: "An intelligent financial security system that leverages machine learning to identify suspicious financial transactions in real-time. Employs advanced techniques to handle highly imbalanced datasets.",
+    image: "/fraud-detection.jpeg",
+    tags: ["Machine Learning", "Python", "Flask", "Scikit-learn", "XGBoost", "SMOTE"],
+    githubUrl: "https://github.com/Cngh10/Fraud-Detection-Project",
+    liveUrl: "https://github.com/Cngh10/Fraud-Detection-Project",
+    slug: "fraud-detection-system",
+    featured: true,
+    date: "2025",
+    client: "Fintech Analytics"
+  },
   {
     id: 4,
-    title: "Analytics Dashboard",
-    description: "A comprehensive analytics dashboard with interactive charts and reports",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    tags: ["React", "D3.js", "Python", "FastAPI"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    slug: "analytics-dashboard",
-    featured: false,
-    date: "2023",
-    client: "Data Company",
+    title: "Employee Churn Prediction",
+    description: "A predictive analytics project utilizing machine learning models to identify employee turnover risk, helping HR teams implement proactive retention strategies through data-driven insight visualization.",
+    image: "/employee-churn.png",
+    tags: ["Python", "Pandas", "Scikit-learn", "XGBoost", "Seaborn", "Plotly"],
+    githubUrl: "https://github.com/Cngh10/Employee-churn-prediction-",
+    liveUrl: "https://github.com/Cngh10/Employee-churn-prediction-",
+    slug: "employee-churn-prediction",
+    featured: true,
+    date: "2024",
+    client: "HR Analytics"
   },
-
   {
     id: 5,
-    title: "Library Database Management System",
-    description: "A web-based application designed to manage library resources, user registration, and book checkouts efficiently with a user-friendly interface.",
-    image: "/library-system.jpg",  // 
-    tags: ["HTML", "CSS", "JavaScript", "MySQL", "PHP"],
-    githubUrl: "https://github.com/Cngh10/Library-Database-Management-System",
-    liveUrl: "https://your-live-site.com",
-    slug: "library-management-system",
-    featured: false,
-    date: "2023",
-    client: "Academic Institution"
-  },
- {
-    id: 6,
     title: "Predicting Solar Energy Production",
-    description: "A data science project that uses machine learning to predict annual solar energy output based on geographical and technical factors.",
-    image: "/solar.jpg.webp",  // 
-    tags: ["Python", "Machine Learning", "XGBoost", "Pandas", "Matplotlib"],
+    description: "A regression modeling project predicting annual solar energy production. Utilizes geographical variables, weather attributes, and installation parameters to optimize clean energy forecasting.",
+    image: "/solar.jpg.webp",
+    tags: ["Python", "XGBoost", "Pandas", "Scikit-learn", "Matplotlib"],
     githubUrl: "https://github.com/Cngh10/Predicting-Solar-Energy-Production",
-    liveUrl: "https://your-live-site.com",
+    liveUrl: "https://github.com/Cngh10/Predicting-Solar-Energy-Production",
     slug: "solar-energy-prediction",
     featured: true,
     date: "2025",
-    client: "Academic Institution"
+    client: "Clean Energy Analytics"
   },
+  {
+    id: 6,
+    title: "Clustering Solar Energy Production",
+    description: "An unsupervised machine learning project segmenting geographical areas based on solar energy patterns using K-Means and data visualization to optimize location routing for clean energy grids.",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2070&auto=format&fit=crop",
+    tags: ["Unsupervised Learning", "K-Means", "PCA", "Python", "Seaborn"],
+    githubUrl: "https://github.com/Cngh10/Clustering-Solar-Energy-Production",
+    liveUrl: "https://github.com/Cngh10/Clustering-Solar-Energy-Production",
+    slug: "clustering-solar-energy",
+    featured: false,
+    date: "2025",
+    client: "Clean Energy Research"
+  },
+  {
+    id: 7,
+    title: "Media Downloader",
+    description: "A responsive web application enabling users to download media content from various social media networks seamlessly with proper backend parsing.",
+    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2036&auto=format&fit=crop",
+    tags: ["JavaScript", "HTML", "CSS", "Node.js", "API Integrations"],
+    githubUrl: "https://github.com/Cngh10/MediaDownloader",
+    liveUrl: "https://github.com/Cngh10/MediaDownloader",
+    slug: "media-downloader",
+    featured: false,
+    date: "2025",
+    client: "Web Utilities"
+  }
 ]
 
 export function Projects() {

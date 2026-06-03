@@ -2,55 +2,48 @@ import { Code, Database, Globe, Layout, Palette, Server, Smartphone, Cloud } fro
 import { AnimatedSection } from "@/components/animated-section"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-const skillCategories = [ 
+const skillCategories = [
   {
     id: 1,
-    title: "Programming Language",
-    icon: Layout,
-    skills: ["HTML", "Python", "C++", "SQL", "JavaScript"],
+    title: "Programming Languages",
+    icon: Code,
+    skills: ["Python", "SQL", "C++", "HTML/CSS", "JavaScript"],
     color: "text-blue-500",
   },
   {
     id: 2,
-    title: "Data science &AIML ",
+    title: "Data Science & AI/ML",
     icon: Server,
-    skills: ["Pandas", "Numpy", "Matplotlib", "scikit-learn", "Tensor Flow", "NLP", "PowerBI", "Tableau"],
+    skills: ["Pandas", "NumPy", "Scikit-learn", "TensorFlow", "XGBoost", "NLP", "EDA", "Statistical Analysis"],
     color: "text-green-500",
   },
   {
     id: 3,
-    title: "Database",
+    title: "Data Engineering",
     icon: Database,
-    skills: ["PostgreSQL", "MongoDB"],
+    skills: ["ETL Pipelines", "PySpark", "Hadoop", "SQL Optimization", "Data Cleaning"],
     color: "text-purple-500",
   },
   {
     id: 4,
-    title: "Cloud DevOps & IDEs",
-    icon: Smartphone,
-    skills: ["GitHub", "Docker", "Jupyter Notebook", "AWS"],
+    title: "Databases",
+    icon: Layout,
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
     color: "text-pink-500",
   },
   {
     id: 5,
-    title: "DevOps & Cloud",
+    title: "Cloud & DevOps",
     icon: Cloud,
-    skills: ["AWS", "Docker","GitHub", "Jupyter Notebook"],
+    skills: ["AWS", "Docker", "Git/GitHub", "CI/CD"],
     color: "text-cyan-500",
   },
-   {
-    id: 6,
-    title: "Data Engineering",
-    icon: Code,
-    skills: ["Data cleaning", "SQL optimization", "Hadoop", "ETL pipelines", "PySpark"],
-    color: "text-gray-500",
-  },
   {
-    id: 7,
-    title: "Tools & Others",
-    icon: Code,
-    skills: ["Data Visualization", "VS Code"],
-    color: "text-gray-500",
+    id: 6,
+    title: "Data Visualization & Tools",
+    icon: Palette,
+    skills: ["Power BI", "Tableau", "Matplotlib", "Seaborn", "Jupyter Notebook", "VS Code"],
+    color: "text-orange-500",
   },
 ]
 

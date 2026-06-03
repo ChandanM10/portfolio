@@ -43,14 +43,15 @@ export function About() {
             <div>
               <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
               <p className="text-muted-foreground mb-4">
-                I'm a passionate Data Enthusiast and Information Science graduate skilled in Python, SQL, and AI/ML.
-                With expertise in AI-driven solutions, microservices, and data pipeline optimization, I focus on
-                building scalable systems for impactful business outcomes.
+                I'm an Information Science and Engineering graduate with hands-on expertise in Python, SQL, and AI/ML.
+                With practical knowledge in data pipelines, predictive modeling, and system optimization, I focus on 
+                building robust, scalable systems that turn data into direct business impact.
               </p>
               <p className="text-muted-foreground mb-6">
-                Recently completed intern at Spinnaker Analytics, I'm passionate about leveraging emerging technologies to
-                solve real-world problems and contribute to high-performance engineering teams. My experience spans from
-                emplyee churn prediction to fraud detection using advanced machine learning techniques.
+                During my internship at Spinnaker Analytics, I developed end-to-end machine learning pipelines, ran complex 
+                exploratory analyses, and optimized model classification performance. From building low-latency REST APIs 
+                for fraud scoring to creating voice-activated assistant systems (JARVIS) with contextual memory, I'm passionate 
+                about building intelligent engineering solutions.
               </p>
               <Button size="lg" className="hover-lift" onClick={() => setShowResumeViewer(true)}>
                 <Download className="mr-2 h-4 w-4" />

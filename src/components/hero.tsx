@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 export function Hero() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "I'm a Data Enthusiast specializing in AI & Machine Learning solutions."
+  const fullText = "I'm a Data Scientist & ML Engineer specializing in building intelligent, data-driven systems."
   const [isTypingComplete, setIsTypingComplete] = useState(false)
   const [showResumeViewer, setShowResumeViewer] = useState(false)
 

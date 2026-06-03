@@ -8,93 +8,138 @@ import { projects } from "@/components/projects"
 
 // Enhanced project data with more details
 const projectDetails = {
-  "ecommerce-platform": {
+  "nepal-gov-connect": {
     overview:
-      "A comprehensive e-commerce platform built with modern web technologies, featuring a responsive design, secure payment processing, and an intuitive admin dashboard. The platform supports multiple payment methods, inventory management, and real-time order tracking.",
+      "Nepal Gov Connect is a centralized platform connecting citizens with government authorities in Nepal. It offers public issue reporting, citizen-to-authority routing, and real-time status updates to bridge the communication gap, fostering civic participation and enhancing public accountability.",
     process:
-      "The development process involved careful planning of the user experience, implementing a scalable architecture, and ensuring security best practices. We used Next.js for server-side rendering, Stripe for payment processing, and implemented a headless CMS for content management.",
+      "Constructed using Django for a robust backend and Django REST Framework for API endpoints. Configured Django Channels and WebSockets to establish real-time, bi-directional communication channels for instant issue updates and chat routing. Integrated secure token-based user authentication and PostgreSQL databases for structured transaction storage.",
     features: [
-      "Responsive design that works seamlessly across all devices",
-      "Secure payment processing with Stripe integration",
-      "Real-time inventory management and order tracking",
-      "Admin dashboard with analytics and reporting",
-      "SEO-optimized product pages with dynamic meta tags",
-      "Advanced search and filtering capabilities",
-      "User authentication and profile management",
-      "Email notifications for order updates",
+      "Dynamic issue reporting and category-based automatic department routing",
+      "Real-time communication and notification system powered by Django Channels & WebSockets",
+      "Comprehensive citizen and administrative dashboard with verification workflows",
+      "Secure user authentication, authorization, and audit logs for sensitive operations",
+      "Fully responsive design optimized for mobile and desktop screens",
     ],
     challenges:
-      "One of the main challenges was implementing a scalable cart system that could handle concurrent users while maintaining data consistency. We solved this by implementing optimistic updates with proper error handling and rollback mechanisms.",
-    technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "Prisma", "PostgreSQL"],
+      "Implementing a real-time messaging system that scales reliably. This was solved by configuring Redis as the backing channel layer for Django Channels, allowing asynchronous routing of WebSocket packets while maintaining state consistency.",
+    technologies: ["Django", "Django REST Framework", "Channels", "WebSockets", "PostgreSQL", "Redis", "JavaScript"],
     timeline: "3 months",
     role: "Full Stack Developer",
-    client: "E-commerce Startup",
+    client: "Civic Tech Project",
   },
-  "task-management-app": {
+  "jarvis-voice-assistant": {
     overview:
-      "A collaborative task management application designed for remote teams, featuring real-time updates, project organization, and team collaboration tools. The app helps teams stay organized and productive with intuitive task tracking and progress monitoring.",
+      "An AI-powered voice assistant capable of natural voice interaction, query resolution, and local/cloud automation. It operates directly at the OS level to automate tasks, run files, check emails, control browsers, and execute system commands.",
     process:
-      "Built with a focus on real-time collaboration, the app uses WebSocket connections for instant updates. The architecture emphasizes scalability and performance, with efficient data synchronization and offline support.",
+      "Developed in Python using Google Speech Recognition APIs and Pyttsx3 text-to-speech engine. Built a modular command parsing architecture utilizing regular expressions and basic NLP. Connected local llama-based LLM APIs to handle contextual memory, maintaining conversational state between turns.",
     features: [
-      "Real-time collaboration with instant updates",
-      "Drag-and-drop task organization with Kanban boards",
-      "Team member assignment and role management",
-      "Project timeline and milestone tracking",
-      "File attachments and comment system",
-      "Mobile-responsive design for on-the-go access",
-      "Integration with popular calendar applications",
-      "Advanced reporting and productivity analytics",
+      "Real-time voice query recognition and text-to-speech synthesized replies",
+      "System automation including app launching, file system editing, and media controls",
+      "Web automation using Selenium and Web scraping for automated search and retrieval",
+      "Intelligent memory module to store preferences and contextual user history",
+      "Custom trigger word detection and background microphone loop execution",
     ],
     challenges:
-      "Implementing real-time synchronization across multiple users while maintaining performance was complex. We used Socket.io for real-time communication and implemented conflict resolution algorithms for concurrent edits.",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express", "JWT"],
-    timeline: "4 months",
-    role: "Lead Developer",
-    client: "Remote Team Solutions",
+      "Synthesizing text-to-speech asynchronously without blocking the microphone loop. Resolved by implementing Python's threading library to decouple command execution and speech processing, keeping the microphone listener active.",
+    technologies: ["Python", "SpeechRecognition", "Pyttsx3", "Selenium", "API Integrations", "Threading"],
+    timeline: "2 months",
+    role: "AI Systems Developer",
+    client: "AI Research Project",
   },
-  "analytics-dashboard": {
+  "fraud-detection-system": {
     overview:
-      "A comprehensive analytics dashboard that transforms complex data into actionable insights through interactive visualizations. The platform serves businesses looking to understand their data better and make informed decisions.",
+      "A machine learning system engineered to detect fraudulent transactions in real-time, helping financial systems prevent fraud, minimize monetary loss, and enhance user trust.",
     process:
-      "The project involved extensive data modeling, creating efficient APIs for data retrieval, and building interactive charts that can handle large datasets. We focused on performance optimization and user experience design.",
+      "Preprocessed millions of transactions, handling massive class imbalance using Synthetic Minority Over-sampling Technique (SMOTE). Built and trained several models including Logistic Regression, Random Forests, and XGBoost, selecting the best model based on F1-score and Precision-Recall Area Under Curve. Wrapped the model in a Flask REST API for live inference scoring.",
     features: [
-      "Interactive charts and graphs with D3.js",
-      "Real-time data updates and live monitoring",
-      "Customizable dashboard layouts and widgets",
-      "Advanced filtering and data segmentation",
-      "Export functionality for reports and presentations",
-      "Multi-tenant architecture for different organizations",
-      "Role-based access control and permissions",
-      "Mobile-optimized responsive design",
+      "Advanced class-imbalance resolution utilizing SMOTE and undersampling techniques",
+      "Feature engineering optimization including transaction-velocity tracking and geographic mapping",
+      "Model benchmarking of RandomForest, XGBoost, and Logistic Regression models",
+      "RESTful API integration via Flask for low-latency live transaction evaluation",
+      "Detailed exploratory data analysis (EDA) highlighting fraud pattern clusters",
     ],
     challenges:
-      "Handling large datasets while maintaining smooth interactions required careful optimization. We implemented data virtualization, efficient caching strategies, and progressive loading to ensure optimal performance.",
-    technologies: ["React", "D3.js", "Python", "FastAPI", "PostgreSQL", "Redis"],
-    timeline: "5 months",
-    role: "Full Stack Developer",
-    client: "Data Analytics Company",
+      "Handling the severe class imbalance (less than 0.1% fraud cases) without overfitting the model. Solved by tuning probability thresholds, applying cross-validation on the SMOTE-augmented dataset, and prioritizing Precision-Recall curves over simple ROC-AUC.",
+    technologies: ["Python", "TensorFlow", "Flask", "Scikit-learn", "Pandas", "SMOTE", "XGBoost"],
+    timeline: "3 months",
+    role: "Data Scientist",
+    client: "Fintech Analytics",
   },
-  "social-media-app": {
+  "employee-churn-prediction": {
     overview:
-      "A modern social media platform built for mobile-first experiences, featuring real-time messaging, content sharing, and community building tools. The app focuses on user engagement and seamless social interactions.",
+      "A predictive analytics application that determines the likelihood of employee attrition. It helps HR leaders take proactive retention measures to retain high-performing team members before they resign.",
     process:
-      "Developed using React Native for cross-platform compatibility, with Firebase providing backend services. The app emphasizes user experience with smooth animations, intuitive navigation, and responsive design.",
+      "Analyzed core employee metrics (performance reviews, tenure, compensation, work-life balance) using Pandas and NumPy. Formulated churn prediction classification models utilizing Random Forests and gradient boosting. Designed interactive dashboard widgets to represent risk segments.",
     features: [
-      "Real-time messaging and chat functionality",
-      "Photo and video sharing with filters",
-      "User profiles and social connections",
-      "Content discovery and recommendation engine",
-      "Push notifications for engagement",
-      "Cross-platform compatibility (iOS and Android)",
-      "Offline support for core features",
-      "Advanced privacy and security settings",
+      "Attrition prediction classification modeling achieving over 85% accuracy",
+      "Interactive data visualizations demonstrating key turnover drivers",
+      "HR risk segment classification to identify departments with highest flight risks",
+      "Feature importance evaluation showcasing salary disparities and management friction as top indicators",
+      "Predictive analytics report output for C-suite decision alignment",
     ],
     challenges:
-      "Optimizing performance for mobile devices while handling real-time features required careful resource management. We implemented efficient state management and optimized image/video processing for mobile networks.",
-    technologies: ["React Native", "Firebase", "Redux", "TypeScript", "Expo"],
-    timeline: "6 months",
-    role: "Mobile Developer",
-    client: "Social Media Startup",
+      "Determining high-dimensional interactions between qualitative features like 'job satisfaction' and quantitative variables like 'years since last promotion'. Solved by utilizing tree-based feature importance algorithms and applying SHAP (SHapley Additive exPlanations) values.",
+    technologies: ["Python", "Pandas", "Scikit-learn", "XGBoost", "Seaborn", "Plotly"],
+    timeline: "2 months",
+    role: "ML Engineer",
+    client: "HR Analytics",
+  },
+  "solar-energy-prediction": {
+    overview:
+      "A regression forecasting project designed to predict annual solar energy output. Helps developers select optimal geolocations, select equipment types, and forecast future power yields.",
+    process:
+      "Processed physical parameters, weather datasets, panel technology classes, and sun exposure ratios. Trained regression estimators including XGBoost, Ridge, and Random Forest Regressors, tuning hyperparameters using GridSearch to minimize Root Mean Squared Error (RMSE).",
+    features: [
+      "Regression model forecasting annual solar energy production with high accuracy",
+      "Exploratory analysis of weather patterns, tracking solar irradiance parameters",
+      "Hyperparameter optimization using GridSearchCV to tune regression algorithms",
+      "Geographic correlation mapping of energy yield based on latitudinal datasets",
+      "Automated pipeline ingestion of solar telemetry logs",
+    ],
+    challenges:
+      "Dealing with highly correlated meteorological variables (like temperature, humidity, and direct solar irradiance) causing multicollinearity. Resolved this by using Ridge Regression regularization and tree-based modeling (XGBoost) which are robust to multicollinearity.",
+    technologies: ["Python", "XGBoost", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn"],
+    timeline: "2 months",
+    role: "Data Analyst",
+    client: "Clean Energy Analytics",
+  },
+  "clustering-solar-energy": {
+    overview:
+      "An unsupervised clustering application designed to identify clean energy grid zones. Segmenting geographical locations into cohesive solar production regions based on longitudinal yields.",
+    process:
+      "Applied Principal Component Analysis (PCA) to reduce solar yield dimensionality. Used K-Means clustering algorithm, optimizing the number of clusters using Elbow Method and Silhouette Coefficient. Visualized spatial cluster segments on map charts.",
+    features: [
+      "Unsupervised learning grouping geographical areas by solar output patterns",
+      "K-Means clustering algorithm optimized using Silhouette Analysis and Elbow graphs",
+      "Dimensionality reduction via PCA for multi-spectral meteorological attributes",
+      "Seaborn data visualization layers mapping regional solar clusters",
+      "Comparative profiling of each cluster's average yield potential",
+    ],
+    challenges:
+      "Determining the optimal number of clusters without prior labeling. Solved by calculating Silhouette Coefficients alongside Inertia scores across various cluster parameters to identify the best elbow point.",
+    technologies: ["Python", "K-Means", "PCA", "Scikit-learn", "Seaborn", "Matplotlib"],
+    timeline: "2 months",
+    role: "ML Engineer",
+    client: "Clean Energy Research",
+  },
+  "media-downloader": {
+    overview:
+      "A utility platform created to help users quickly and safely parse and download public media links from various social web services.",
+    process:
+      "Designed a minimalist frontend using HTML, CSS, and modern JavaScript. Implemented a backend routing system using Node.js to receive link requests, scrape target page links, extract direct media URLs, and stream them securely to the user.",
+    features: [
+      "Dynamic URL validation and platform routing engine",
+      "Streamed downloads directly to browser buffer for high speed",
+      "Responsive frontend UI working across all mobile viewports",
+      "Clean API parsing system to communicate with scraper services",
+      "Anti-throttling link resolution headers",
+    ],
+    challenges:
+      "Handling rapid API changes from social media platforms breaking the scrapers. Implemented fallback algorithms and error-response triggers that notify administrators to update parser classes when formats mismatch.",
+    technologies: ["JavaScript", "HTML", "CSS", "Node.js", "Express", "API Integration"],
+    timeline: "1 month",
+    role: "Software Engineer",
+    client: "Web Utilities",
   },
 }
 

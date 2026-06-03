@@ -178,7 +178,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   <p className="text-sm font-medium">Data Science & AI</p>
                 </div>
                 <div className="text-right text-sm">
-                  <p>Mar 2025 - May 2025</p>
+                  <p>Nov 2024 - Mar 2025</p>
                   <p>Bangalore, Karnataka</p>
                 </div>
               </div>
@@ -202,25 +202,42 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             <div className="mb-6">
               <h2 className="text-lg font-bold border-b-2 border-black mb-3">PROJECTS</h2>
 
-              {/* Employee Churn Prediction */}
+              {/* Nepal Gov Connect */}
               <div className="mb-4">
                 <div className="flex justify-between items-start mb-1">
-                  <p className="font-semibold">Employee Churn Prediction using Machine Learning 🔗</p>
-                  <p className="text-sm">2024</p>
+                  <p className="font-semibold">Nepal Gov Connect (Full-Stack Civic Platform) 🔗</p>
+                  <p className="text-sm">2026</p>
                 </div>
-                <p className="text-sm italic mb-2">Python ML, Data Libraries, Scikit-learn</p>
+                <p className="text-sm italic mb-2">Django, Django REST Framework, Channels, WebSockets, PostgreSQL</p>
                 <ul className="text-sm space-y-1 ml-4">
                   <li>
-                    • Analyzed employee datasets to uncover key factors influencing attrition, such as job role,
-                    satisfaction level, and work-life balance.
+                    • Designed and built a centralized web application allowing citizens to submit complaints and report civic issues directly to administrative bodies.
                   </li>
                   <li>
-                    • Developed and fine-tuned predictive models (Logistic Regression, Random Forest, XGBoost) to
-                    classify potential employee churn with an accuracy of over 85%.
+                    • Configured Django Channels and WebSockets to establish real-time bi-directional notification and communication channels.
                   </li>
                   <li>
-                    • Visualized churn trends through interactive dashboards using tools like Matplotlib, Seaborn, and
-                    Plotly to support strategic HR decisions
+                    • Created a dynamic routing system utilizing PostgreSQL database relationships to dispatch issues automatically to corresponding local administrative divisions.
+                  </li>
+                </ul>
+              </div>
+
+              {/* JARVIS Voice Assistant */}
+              <div className="mb-4">
+                <div className="flex justify-between items-start mb-1">
+                  <p className="font-semibold">JARVIS Voice Assistant (Voice Operating Assistant) 🔗</p>
+                  <p className="text-sm">2025</p>
+                </div>
+                <p className="text-sm italic mb-2">Python, SpeechRecognition, Pyttsx3, Selenium, Web Scraping, Threading</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>
+                    • Developed an OS-level voice assistant in Python utilizing Google Speech Recognition and text-to-speech engines for hands-free query execution.
+                  </li>
+                  <li>
+                    • Integrated local LLM endpoints to facilitate conversational query resolution and context-aware session memory persistence.
+                  </li>
+                  <li>
+                    • Implemented multi-threaded task management loops to execute OS commands, browse directories, check emails, and search the web concurrently without blocking active microphone inputs.
                   </li>
                 </ul>
               </div>
@@ -231,7 +248,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   <p className="font-semibold">Fraud Detection System 🔗</p>
                   <p className="text-sm">2025</p>
                 </div>
-                <p className="text-sm italic mb-2">Machine learning, TensorFlow, Python</p>
+                <p className="text-sm italic mb-2">Machine learning, TensorFlow, Python, Flask, SMOTE</p>
                 <ul className="text-sm space-y-1 ml-4">
                   <li>
                     • Collected and preprocessed transactional data, handling imbalanced classes using techniques like
@@ -244,6 +261,29 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   <li>
                     • Built and deployed machine learning models (Logistic Regression, Random Forest, XGBoost) achieving
                     over 90% precision in detecting fraudulent transactions.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Employee Churn Prediction */}
+              <div className="mb-4">
+                <div className="flex justify-between items-start mb-1">
+                  <p className="font-semibold">Employee Churn Prediction using Machine Learning 🔗</p>
+                  <p className="text-sm">2024</p>
+                </div>
+                <p className="text-sm italic mb-2">Python ML, Data Libraries, Scikit-learn, XGBoost, Seaborn, Plotly</p>
+                <ul className="text-sm space-y-1 ml-4">
+                  <li>
+                    • Analyzed employee datasets to uncover key factors influencing attrition, such as job role,
+                    satisfaction level, and work-life balance.
+                  </li>
+                  <li>
+                    • Developed and fine-tuned predictive models (Logistic Regression, Random Forest, XGBoost) to
+                    classify potential employee churn with an accuracy of over 85%.
+                  </li>
+                  <li>
+                    • Visualized churn trends through interactive dashboards using tools like Matplotlib, Seaborn, and
+                    Plotly to support strategic HR decisions.
                   </li>
                 </ul>
               </div>
