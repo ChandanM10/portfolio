@@ -1,7 +1,7 @@
 💼 Chandan Mahato’s Portfolio Website
 
 Live Demo: chandan-mahato-portfolio-website.vercel.app
-I’m Chandan Mahato, a passionate software developer, ethical hacker, and final-year engineering student with experience in web development, automation testing, machine learning, and more. Through this portfolio, I aim to highlight my academic journey, hands-on projects, and the skill set I’ve built over the years.
+I’m Chandan Mahato, a Information Science graduate with hands-on experience in Machine Learning, Generative AI, Python development, and data analytics. Skilled in building AI-powered applications, ML pipelines, REST APIs, and LLM-based solutions using Python, FastAPI, TensorFlow, LangChain, and Scikit-learn. Passionate about leveraging AI and software engineering to solve real-world business problems and build scalable intelligent systems. Through this portfolio, I aim to highlight my academic journey, hands-on projects, and the skill set I’ve built over the years.
 
 ⸻
 
