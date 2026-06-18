@@ -6,9 +6,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/cngh10", label: "GitHub" },
+    { icon: Github, href: "https://github.com/ChandanM10", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com/in/chandan-mahato-6a484b279", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:itssinghchandan10@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:chandanmahato7975@gmail.com", label: "Email" },
   ]
 
   const quickLinks = [
@@ -28,8 +28,8 @@ export function Footer() {
               My Portfolio
             </Link>
             <p className="text-muted-foreground mb-6 max-w-md">
-              A passionate Data Enthusiast specializing in AI & Machine Learning, creating innovative solutions for
-              real-world problems. Let's build something amazing together.
+              A passionate Software Engineer, Python Developer, and AI Enthusiast with hands-on experience in full-stack development, 
+              machine learning, and intelligent applications. Skilled in building scalable web applications, REST APIs, and AI-powered solutions that solve real-world problems and create meaningful impact.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -64,8 +64,8 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Get in Touch</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
               <p>Kathmandu, Nepal</p>
-              <p>itssinghchandan10@gmail.com</p>
-              <p>+977-9818503936</p>
+              <p>chandanmahato7975@gmail.com</p>
+              <p>+977-9761156281</p>
             </div>
           </div>
         </div>
