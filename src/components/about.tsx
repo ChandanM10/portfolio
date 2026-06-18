@@ -8,7 +8,7 @@ import { useState } from "react"
 import { ResumePDFViewer } from "@/components/resume-pdf-viewer"
 
 const stats = [
-  { icon: Award, label: "Years Experience", value: "0-1" },
+  { icon: Award, label: "Years Experience", value: "1-2" },
   { icon: Users, label: "Projects Completed", value: "10+" },
   { icon: Coffee, label: "Technologies Mastered", value: "15+" },
 ]
@@ -29,7 +29,7 @@ export function About() {
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary hover-lift">
                 <Image
                   src="/chandan-profile.jpeg"
-                  alt="Chandan Mahato - Data Enthusiast"
+                  alt="Chandan Mahato - Data Enthusiast|Developer"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 256px, 320px"
