@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 export function Hero() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "I'm a Data Scientist & ML Engineer specializing in building intelligent, data-driven systems."
+  const fullText = "I'm a Python Developer, Software Engineer, and Machine Learning Enthusiast with experience in building scalable applications, AI-powered systems, and data-driven solutions."
   const [isTypingComplete, setIsTypingComplete] = useState(false)
   const [showResumeViewer, setShowResumeViewer] = useState(false)
 
@@ -80,7 +80,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <Button variant="ghost" size="icon" asChild className="hover-lift">
-              <Link href="https://github.com/cngh10" target="_blank" aria-label="GitHub">
+              <Link href="https://github.com/ChandanM10" target="_blank" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </Link>
             </Button>
@@ -90,7 +90,7 @@ export function Hero() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild className="hover-lift">
-              <Link href="mailto:itssinghchandan10@gmail.com" aria-label="Email">
+              <Link href="mailto:chandanmahato7975@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </Link>
             </Button>
