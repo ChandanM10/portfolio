@@ -48,7 +48,7 @@ export function About() {
                 building robust, scalable systems that turn data into direct business impact.
               </p>
               <p className="text-muted-foreground mb-6">
-                During my internship at Spinnaker Analytics, I developed end-to-end machine learning pipelines, ran complex 
+                During my internship at Spinnaker Analytics & IBM, I developed end-to-end machine learning pipelines, ran complex 
                 exploratory analyses, and optimized model classification performance. From building low-latency REST APIs 
                 for fraud scoring to creating voice-activated assistant systems (JARVIS) with contextual memory, I'm passionate 
                 about building intelligent engineering solutions.
