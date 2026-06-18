@@ -111,10 +111,10 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <p className="text-base mb-4">Kathmandu, Nepal- 44600</p>
 
               <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <span>📞+977-9818503936</span>
-                <span>✉️itssinghchandan10@gmail.com</span>
+                <span>📞+977-9761156281</span>
+                <span>✉️chandanmahato7975@gmail.com</span>
                 <span>🔗linkedin.com/in/chandan-mahato-6a484b279</span>
-                <span>🔗github.com/cngh10</span>
+                <span>🔗github.com/ChandanM10</span>
               </div>
             </div>
 
