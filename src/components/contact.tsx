@@ -50,13 +50,13 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      details: "itssinghchandan10@gmail.com",
+      details: "chandanmahato7975@gmail.com",
       color: "text-green-500",
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+977 9818503936",
+      details: "+977 9761156281",
       color: "text-purple-500",
     },
   ]
