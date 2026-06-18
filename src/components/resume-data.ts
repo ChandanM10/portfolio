@@ -1,12 +1,12 @@
 export const resumeData = {
   personalInfo: {
     name: "CHANDAN MAHATO",
-    title: "Data Enthusiast | AI & Machine Learning",
+    title: "Data Enthusiast |Python Developer | AI & Machine Learning",
     location: "Kathmandu, Nepal - 44600",
-    phone: "+977-9818503936",
-    email: "itssinghchandan10@gmail.com",
+    phone: "+977-9761156281",
+    email: "chandanmahato7975@gmail.com",
     linkedin: "linkedin.com/in/chandan-mahato-6a484b279",
-    github: "github.com/cngh10",
+    github: "github.com/ChandanM10",
   },
 
   professionalSummary:
@@ -40,6 +40,21 @@ export const resumeData = {
         "Statistical Analysis",
       ],
     },
+    {
+      title: "Machine Learning Intern",
+      company: "IBM",
+      department: "Machine Learning",
+      duration: "Apr 2025 - Aug 2025",
+      location: "Remote",
+      responsibilities: [
+        "Built machine learning applications using Python and scikit-learn for predictive modeling and data-driven decision-making",
+        "Developed reusable data processing pipelines for cleaning, transformation, and feature extraction from large datasets",
+        "Integrated machine learning workflows with REST APIs and automated model evaluation processes",
+        "Machine Learning & Predictive Analytics",
+        "REST API Integration",
+        "Data Analysis & Visualization",
+       ],
+     },
   ],
 
   education: [
